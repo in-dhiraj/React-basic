@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./styles.css"
-import Chat from './Components/Chat'
 import Heading from "./Components/Heading";
 import Para from "./Components/Para";
 import Card from "./Components/Card"
@@ -11,7 +10,6 @@ function App() {
 
   return (
     <div className="App">
-     {/* <Chat/> */}
       {/* <Heading data={"Hello Developers"} value={value} />
       <Para data={"Welcome to the Course"}/>
       
