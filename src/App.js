@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./styles.css"
+import Chat from './Components/Chat'
+import Heading from "./Components/Heading";
+import Para from "./Components/Para";
+import Card from "./Components/Card"
 
 function App() {
+
+  const [value, setValue] = useState(10)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {/* <Chat/> */}
+      {/* <Heading data={"Hello Developers"} value={value} />
+      <Para data={"Welcome to the Course"}/>
+      
+      <button onClick={()=>{ setValue(value-1) }} > - </button>
+      <button onClick={()=>{ setValue(value+1) }} > + </button> */}
+
+      <Card/>
     </div>
   );
 }
